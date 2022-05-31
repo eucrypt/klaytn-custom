@@ -193,8 +193,8 @@ func (s *PublicBlockChainAPI) GetBlockByNumber(ctx context.Context, blockNr rpc.
 	return nil, err
 }
 
-// GetBlockReceipts returns the transaction receipt for the given block.
-func (s *PublicTransactionPoolAPI) GetBlockReceipts(ctx context.Context, blockNr rpc.BlockNumber) ([]map[string]interface{}, error) {
+// GetBulkReceipts returns the transaction receipt for the given block.
+func (s *PublicTransactionPoolAPI) GetBulkReceipts(ctx context.Context, blockNr rpc.BlockNumber) ([]map[string]interface{}, error) {
 	block, err := s.b.BlockByNumber(ctx, blockNr)
 	if err != nil {
 		return nil, err

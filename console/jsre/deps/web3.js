@@ -5583,9 +5583,9 @@ require = (function e(t, n, r) {
                 outputFormatter: formatters.outputTransactionReceiptFormatter
             });
 
-            var getBlockReceipts = new Method({
-                name: 'getBlockReceipts',
-                call: 'eth_getBlockReceipts',
+            var getBulkReceipts = new Method({
+                name: 'getBulkReceipts',
+                call: 'eth_getBulkReceipts',
                 params: 1,
                 outputFormatter: formatters.outputTransactionReceiptFormatter
             });
@@ -5912,9 +5912,9 @@ require = (function e(t, n, r) {
                 outputFormatter: formatters.outputTransactionReceiptFormatter
             });
 
-            var getBlockReceipts = new Method({
-                name: 'getBlockReceipts',
-                call: 'eth_getBlockReceipts',
+            var getBulkReceipts = new Method({
+                name: 'getBulkReceipts',
+                call: 'eth_getBulkReceipts',
                 params: 1,
                 outputFormatter: formatters.outputTransactionReceiptFormatter
             });
@@ -5993,7 +5993,7 @@ require = (function e(t, n, r) {
                 getTransaction,
                 getTransactionFromBlock,
                 getTransactionReceipt,
-                getBlockReceipts,
+                getBulkReceipts,
                 getTransactionCount,
                 call,
                 estimateGas,
