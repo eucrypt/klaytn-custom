@@ -98,7 +98,7 @@ func init() {
 func main() {
 	// Set NodeTypeFlag to en
 	utils.NodeTypeFlag.Value = "en"
-
+	fmt.Println("Starting node klaytn-custom")
 	if err := app.Run(os.Args); err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
